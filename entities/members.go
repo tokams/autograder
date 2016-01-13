@@ -288,6 +288,7 @@ func (m *Member) connectToGithub() error {
 	}
 
 	if !m.accessToken.HasToken() {
+		fmt.Println("members.go:")
 		return errors.New("Missing AccessToken to the memeber. Can't contact github.")
 	}
 
